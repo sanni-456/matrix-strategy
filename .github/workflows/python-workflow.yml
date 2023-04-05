@@ -11,6 +11,10 @@ jobs:
     #----------------------------------------------#
     # Add your matrix strategy configuration here  #
     #----------------------------------------------#
+    strategy:
+      matrix:
+        Platform:[ubuntu-latest, macos-latest, windows-latest]
+        Version:["3.10","3.9","3.8"]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
