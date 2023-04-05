@@ -13,7 +13,7 @@ jobs:
     #----------------------------------------------#
     strategy:
       matrix:
-        Platform:[ubuntu-latest, macos-latest, windows-latest]
+        platform:[unbuntu-latest, macos-latest, windows-latest]
         Version:["3.10","3.9"]
     runs-on: ubuntu-latest
     steps:
